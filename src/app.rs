@@ -2,7 +2,7 @@ use leptos::{For, ForProps, *};
 use leptos_meta::*;
 use leptos_router::*;
 
-const MANY_COUNTERS: usize = 1000;
+const MANY_COUNTERS: usize = 100;
 
 type CounterHolder = Vec<(usize, (ReadSignal<i32>, WriteSignal<i32>))>;
 
