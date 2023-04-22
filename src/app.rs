@@ -6,7 +6,6 @@ const MANY_COUNTERS: usize = 100;
 
 type CounterHolder = Vec<(usize, (ReadSignal<i32>, WriteSignal<i32>))>;
 
-
 #[derive(Copy, Clone)]
 struct CounterUpdater {
     set_counters: WriteSignal<CounterHolder>,
@@ -26,7 +25,7 @@ pub fn App(cx: Scope) -> impl IntoView {
         <Stylesheet id="leptos" href="/pkg/leptos_start.css"/>
 
         // sets the document title
-        <Title text="Welcome to Leptos"/>
+        <Title text="List"/>
 
         // content for this welcome page
         <Router>
